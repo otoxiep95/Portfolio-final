@@ -1,0 +1,1210 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*DESKTOP/TABLET*/
+
+
+/*FRONTPAGE*/
+
+h1 {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    font-size: 4vw;
+}
+
+#logo {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    top: 13vh;
+    left: 10vw;
+}
+
+#myName {
+    position: absolute;
+    top: 65vh;
+    left: 0vw;
+    padding-left: 7.5vw;
+    padding-right: 2vw;
+    margin: 0;
+    color: white;
+    background-color: darkmagenta;
+}
+
+.nameAnimation {
+    animation: nameAnim 2s ease-in forwards;
+}
+
+@keyframes nameAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-10vh)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+#portfolio_link:link {
+    right: 0vw;
+    top: 15vh;
+    padding-right: 7.5vw;
+    padding-left: 2vw;
+    color: white;
+    background-color: crimson;
+}
+
+#portfolio_link:visited {
+    color: white;
+    background-color: crimson;
+}
+
+#portfolio_link:hover {
+    background-color: transparent;
+    color: crimson;
+}
+
+#about_link:link {
+    right: 0vw;
+    top: 35vh;
+    padding-right: 7.5vw;
+    padding-left: 2vw;
+    color: white;
+    background-color: darkorange;
+}
+
+#about_link:visited {
+    right: 0vw;
+    top: 35vh;
+    padding-right: 7.5vw;
+    padding-left: 2vw;
+    color: white;
+    background-color: darkorange;
+}
+
+#about_link:hover {
+    background-color: transparent;
+    color: darkorange;
+}
+
+a:link {
+    position: absolute;
+    margin: 0;
+    text-decoration: none;
+}
+
+a:visited {
+    position: absolute;
+    margin: 0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#fronttext {
+    position: absolute;
+    top: 77vh;
+    left: 0;
+    padding-left: 7.5vw;
+    padding-right: 2vw;
+    margin: 0;
+    font-size: 2vw;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    background-color: darkturquoise;
+}
+
+#background_img {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /*background-image: url(background.svg);*/
+}
+
+
+/*PROJECTS PAGE*/
+
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 7vh;
+}
+
+.nav_text {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+}
+
+#nav_home_link {
+    display: inline;
+    position: absolute;
+    left: 3vw;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#nav_about_link {
+    display: inline;
+    position: absolute;
+    right: 3vw;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#projects_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 93vh;
+    width: 100vw;
+}
+
+.theme_box {
+    position: relative;
+    text-align: left;
+    width: 25vw;
+    transition: all 2s ease;
+}
+
+.disapear {
+    width: 0;
+    transition: all 3s ease;
+}
+
+.exit_box {
+    position: absolute;
+    display: none;
+    left: 0vw;
+    top: 7vh;
+    width: 3vw;
+    height: 5vh;
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.theme_box_expanded {
+    position: relative;
+    width: 100vw;
+    height: 93vh;
+    transition: all 2s ease;
+}
+
+.text {
+    display: none;
+    position: absolute;
+    width: 40vw;
+    top: 40vh;
+    left: 5vw;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.8vw;
+}
+
+#text_UX {
+    top: 30vh;
+}
+
+#firstWeb {
+    display: none;
+    width: 20vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10vh;
+    right: 30vw;
+}
+
+#pizza {
+    display: none;
+    width: 20vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+}
+
+#link_firstweb {
+    display: none;
+    bottom: 15vh;
+    left: 7vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#link_firstweb:visited {
+    text-decoration: none;
+}
+
+#link_pizzapage {
+    display: none;
+    bottom: 15vh;
+    left: 25vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#link_pizzapage:visited {
+    text-decoration: none;
+}
+
+#hero_page_link {
+    display: none;
+    position: absolute;
+    bottom: 15vh;
+    left: 7vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#hero_page_link:visited {
+    text-decoration: none;
+}
+
+#charc_story_page_link {
+    display: none;
+    position: absolute;
+    bottom: 15vh;
+    left: 22vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#charc_story_page_link:visited {
+    text-decoration: none;
+}
+
+#inter_anim_page_link {
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 7vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#inter_anim_page_link:visited {
+    text-decoration: none;
+}
+
+#someHot_page_link {
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 32vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#someHot_page_link:visited {
+    text-decoration: none;
+}
+
+#kin_page_link {
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 7vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#kin_page_link:visited {
+    text-decoration: none;
+}
+
+#firstVideo_link {
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 7vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#firstVideo_link:visited {
+    text-decoration: none;
+}
+
+#wander_page_link {
+    display: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 31vw;
+    color: black;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+}
+
+#wander_page_link:visited {
+    text-decoration: none;
+}
+
+.title_project {
+    max-width: 25vw;
+    margin: 0;
+    position: absolute;
+    /* top: 60vh;
+    left: 3vw;*/
+    top: 20vh;
+    left: 5vw;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.2em;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    transition: all 2s ease;
+    /*transform: rotate(90deg);*/
+}
+
+#basic_web {
+    background-color: darkturquoise;
+}
+
+#basic_animation {
+    background-color: crimson;
+}
+
+#basic_UX {
+    background-color: darkmagenta;
+}
+
+#basic_video {
+    background-color: darkorange;
+}
+
+#hero_anim_img {
+    display: none;
+    position: absolute;
+    right: 10vw;
+    top: 10vh;
+    width: 20vw;
+    height: auto;
+}
+
+#woodboy {
+    display: none;
+    right: 30vw;
+    top: 30vh;
+    position: absolute;
+    width: 10vw;
+    height: auto;
+    border: 2px black solid;
+    background-color: white;
+}
+
+#someHot {
+    display: none;
+    position: absolute;
+    right: 27vw;
+    top: 5vh;
+    width: 20vw;
+    height: auto;
+    border: 2px black solid;
+    background-color: black;
+}
+
+#kin_img {
+    display: none;
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    right: 15vw;
+    top: 15vh;
+}
+
+#bikelife_img {
+    display: none;
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    top: 10vh;
+    right: 15vw;
+}
+
+#wander_img {
+    display: none;
+    position: absolute;
+    width: 22.5vw;
+    height: auto;
+    top: 35vh;
+    right: 5vw;
+}
+
+
+/*PROJECT PAGES*/
+
+#nav_portfolio_link {}
+
+#nav_portfolio_link:link {
+    display: inline;
+    position: absolute;
+    left: 10vw;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#nav_portfolio_link:visited {
+    display: inline;
+    position: absolute;
+    left: 10vw;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.project_page_main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 93vh;
+}
+
+.project_page_title {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#responsive_title {
+    background-color: darkturquoise;
+}
+
+#pizza_title {
+    background-color: darkturquoise;
+}
+
+#hero_title {
+    background-color: crimson;
+}
+
+#story_character_title {
+    background-color: crimson;
+}
+
+#pool_title {
+    background-color: crimson;
+}
+
+#someHot_title {
+    background-color: crimson;
+}
+
+#kin_title {
+    background-color: darkmagenta;
+}
+
+#firstvideo_title {
+    background-color: darkorange;
+}
+
+#wander_title {
+    background-color: darkorange;
+}
+
+.project_page_text {
+    font-family: 'PT Sans', sans-serif;
+    grid-column: 2/6;
+    grid-row: 4/8;
+}
+
+#responsive_mood {
+    width: 25vw;
+    height: auto;
+    grid-column: 7/8;
+    grid-row: 3/7;
+}
+
+#logo_responsive {
+    width: 20vw;
+    height: auto;
+    grid-column: 9/-1;
+    grid-row: 3/7;
+    margin-top: 4vh;
+}
+
+#site_title {
+    justify-self: center;
+    grid-column: 9/12;
+    grid-row: 3/4;
+    margin: 0;
+    font-size: 2vw;
+}
+
+#wander_title,
+#firstvideo_title {
+    background-color: darkorange;
+}
+
+#site_link {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: darkturquoise;
+}
+
+#site_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#site_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#link_pizzasite {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: darkturquoise;
+}
+
+#link_pizzasite:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#link_pizzasite:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#link_pizzapre {
+    display: block;
+    bottom: 15vh;
+    left: 20vw;
+    background-color: darkturquoise;
+}
+
+#link_pizzapre:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#link_pizzapre:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#link_hero_animation {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: crimson;
+}
+
+#link_hero_animation:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#link_hero_animation:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#style_link {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: crimson;
+}
+
+#style_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#style_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#sprite_link {
+    display: block;
+    bottom: 15vh;
+    left: 20vw;
+    background-color: crimson;
+}
+
+#sprite_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#sprite_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#int_anim_link {
+    display: block;
+    bottom: 15vh;
+    left: 12vw;
+    background-color: crimson;
+}
+
+#int_anim_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#int_anim_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#pool1_link {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: crimson;
+}
+
+#pool1_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#pool1_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#pool2_link {
+    display: block;
+    bottom: 10vh;
+    left: 30vw;
+    background-color: crimson;
+}
+
+#pool2_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#pool2_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#storyboard_someHot_link {
+    display: block;
+    bottom: 15vh;
+    left: 12vw;
+    background-color: crimson;
+}
+
+#storyboard_someHot_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#storyboard_someHot_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#tests_link {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: crimson;
+}
+
+#tests_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#tests_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#final_link {
+    display: block;
+    bottom: 10vh;
+    left: 30vw;
+    background-color: crimson;
+}
+
+#final_link:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#final_link:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#wandertogether_link {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: darkorange;
+}
+
+#wandertogether_link:link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#wandertogether_link:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#kin_report_link {
+    display: block;
+    bottom: 15vh;
+    left: 10vw;
+    background-color: darkmagenta;
+}
+
+#kin_report_link:link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#kin_report_link:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#design_doc_link {
+    display: block;
+    bottom: 15vh;
+    left: 30vw;
+    background-color: darkmagenta;
+}
+
+#design_doc_link:link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#design_doc_link:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#link_prototype {
+    display: block;
+    bottom: 10vh;
+    left: 30vw;
+    background-color: darkmagenta;
+}
+
+#link_prototype:link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#link_prototype:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#wandertogether_link {
+    display: block;
+    bottom: 15vh;
+    left: 10vw;
+    background-color: darkorange;
+}
+
+#wandertogether_link:link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#wandertogether_link:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#storyboardwander_link {
+    display: block;
+    bottom: 15vh;
+    left: 20vw;
+    background-color: darkorange;
+}
+
+#storyboardwander_link:link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#storyboardwander_link:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#pizza_web_img {
+    grid-column: 8/-1;
+    grid-row: 3/8;
+    width: 27vw;
+    height: auto;
+}
+
+#hero_img {
+    grid-column: 8/-1;
+    grid-row: 3/8;
+    width: 30vw;
+    height: auto;
+}
+
+#someHot_poster {
+    width: 24vw;
+    height: auto;
+    grid-column: 8/-1;
+    grid-row: 3/8;
+}
+
+#characters_img {
+    grid-column: 8/-1;
+    grid-row: 2/8;
+    width: 35vw;
+    height: auto;
+}
+
+#storyboard_img {
+    grid-column: 8/-1;
+    grid-row: 5/8;
+    width: 30vw;
+    height: auto;
+}
+
+#minions {
+    grid-column: 8/-1;
+    grid-row: 4/8;
+    width: 30vw;
+    height: auto;
+}
+
+#kin_logo {
+    grid-column: 8/-1;
+    grid-row: 3/8;
+    width: 30vw;
+    height: auto;
+}
+
+.video1 {
+    grid-column: 7/12;
+    grid-row: 3/10;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ABOUT ME PAGE*/
+
+#about_main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100vw;
+    height: 93vh;
+}
+
+#aboutMe_title {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.5vw;
+    padding-left: 1.5vw;
+    color: white;
+    background-color: darkorange;
+}
+
+#aboutMe_text {
+    grid-column: 4/7;
+    grid-row: 4/10;
+}
+
+#me_img {
+    width: 15vw;
+    height: auto;
+    grid-column: 2/6;
+    grid-row: 4/9;
+    margin-top: 1.5vh;
+    border: 2px black solid;
+    border-radius: 35%;
+}
+#skill_set{
+    width:50vw;
+    grid-column: 7/-1;
+    grid-row: 3/-1;
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        margin: 0;
+        font-size: 7vw;
+    }
+    #logo {
+        position: absolute;
+        width: 35vw;
+        height: auto;
+        top: 10vh;
+        left: 10vw;
+    }
+    #myName {
+        position: absolute;
+        top: 40vh;
+        left: 0vw;
+        padding-left: 7.5vw;
+        padding-right: 2vw;
+        margin: 0;
+        color: white;
+        background-color: darkmagenta;
+    }
+    .nameAnimation {
+        animation: nameAnim 2s ease-in forwards;
+    }
+    @keyframes nameAnim {
+        0% {
+            opacity: 0;
+            transform: translateX(-10vh)
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+    #portfolio_link:link {
+        right: 0vw;
+        top: 15vh;
+        padding-right: 7.5vw;
+        padding-left: 2vw;
+        color: white;
+        background-color: crimson;
+    }
+    #portfolio_link:visited {
+        color: white;
+        background-color: crimson;
+    }
+    #about_link:link {
+        right: 0vw;
+        top: 25vh;
+        padding-right: 7.5vw;
+        padding-left: 2vw;
+        color: white;
+        background-color: darkorange;
+    }
+    #about_link:visited {
+        color: white;
+        background-color: darkorange;
+    }
+    a:link {
+        position: absolute;
+        margin: 0;
+        text-decoration: none;
+    }
+    a:visited {
+        position: absolute;
+        margin: 0;
+        text-decoration: none;
+    }
+    #fronttext {
+        position: absolute;
+        top: 46vh;
+        left: 0;
+        padding-left: 7.5vw;
+        padding-right: 2vw;
+        margin: 0;
+        font-size: 5vw;
+        font-family: 'PT Sans', sans-serif;
+        color: white;
+        background-color: darkturquoise;
+    }
+    #background_img {
+        display: none;
+    }
+    /*PORTFOLIO PAGE*/
+    #projects_main {
+        display: block;
+    }
+    .title_project {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 2.2em;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+        transition: all 2s ease;
+        /*transform: rotate(90deg);*/
+    }
+    .theme_box {
+        height: 90vh;
+        width: 100vw;
+    }
+    .text {
+        display: block;
+        font-size: 1em;
+        width: 90%;
+    }
+    .link_project {
+        display: block !important;
+        font-size: 1em !important;
+        left: 5vw !important;
+        margin-bottom: 5px !important;
+    }
+    #link_pizzapage {
+        bottom: 10vh;
+    }
+    #hero_page_link {
+        bottom: 20vh;
+    }
+    #someHot_page_link {
+        bottom: 5vh;
+    }
+    #text_UX {
+        top: 35vh;
+    }
+    #wander_page_link {
+        bottom: 5vh;
+    }
+    /*PROJECT PAGES*/
+    .project_page_main {
+        display: block;
+    }
+    .project_page_title {
+        font-size: 1.8em;
+    }
+    .project_page_text {
+        width: 80vw;
+        margin-left: 6vw;
+        margin-right: 5vw;
+    }
+    #nav_portfolio_link {
+        left: 30vw;
+        margin-left: 15vw;
+    }
+    #nav_portfolio {
+        left: 30vw;
+    }
+    img {
+        width: 40vw !important;
+    }
+    #int_anim_link {
+        right: 0;
+        bottom: 30vh;
+    }
+    #pool1_link {
+        bottom: 20vh
+    }
+    #design_doc_link {
+        left: 10vw;
+        bottom: 11vh
+    }
+    #link_prototype {
+        left: 10vw;
+        bottom: 7vh;
+    }
+    .video1 {
+        margin-right: 5vw;
+        margin-left: 5vw;
+        width: 90vw;
+        height: auto;
+    }
+    #about_main {
+        display: block;
+    }
+    #aboutMe_title {
+        font-size: 1.8em;
+    }
+    #aboutMe_text {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    #me_img{
+        display: block;
+        width:85vw;
+        height: auto;
+    }
+    #skill_set{
+
+        width: 85vw;
+        height: auto;
+    }
+}

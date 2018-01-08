@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Source+Code+Pro|Zilla+Slab+Highlight" rel="stylesheet">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    <title>Projects</title>
+
+</head>
+
+<body>
+    <header>
+        <a id="nav_home_link" href="index.html">
+            <h2 class="nav_text" id="nav_home">HOME</h2>
+        </a>
+        <a id="nav_about_link" href="about.html">
+            <h2 class="nav_text" id="nav_about">ABOUT ></h2>
+        </a>
+    </header>
+    <main id="projects_main">
+        <div class="theme_box" id="basic_web">
+            <h2 class="title_project" id="web_title">BASIC WEB</h2>
+            <p class="text" id="text_web">An introduction to the basic terminology within interface design, digital communication and responsive web design.<br>There were two main projects, the First responsive website and the Basic redesign case.</p>
+            <img id="firstWeb" src="images/moodboard_500x708.png-24.png" alt="firstWeb">
+            <img id="pizza" src="images/prototype.png" alt="pizza">
+            <a class="link_project" id="link_firstweb" href="responsive_web.html">1.4 Responsive Website > </a>
+            <a class="link_project" href="pizzaweb_page.html" id="link_pizzapage">1.5 Basic Redesign Case ></a>
+        </div>
+        <div class="theme_box" id="basic_animation">
+            <h2 class="title_project" id="anim_title">BASIC ANIMATION</h2>
+            <p class="text" id="text_anim">An introduction to programming through basic animation as well as concepts from classic storytelling and character design.</p>
+
+            <img id="hero_anim_img" src="images/hero.anim..JPG" alt="HeroAnimation">
+            <img id="woodboy" src="images/woodboy.100x153.png" alt="Story/Animation">
+
+            <img id="someHot" src="images/title.png" alt="someHot">
+            <a class="link_project" href="hero_animation.html" id="hero_page_link">2.1 Simple Animations</a>
+            <a class="link_project" href="story_character.html" id="charc_story_page_link">2.2 Storytelling &amp; Character design</a>
+            <a class="link_project" href="projectpool.html" id="inter_anim_page_link">2.3 Interactive Animation/ProjectPool</a>
+            <a class="link_project" href="someLikeHot_project.html" id="someHot_page_link">2.4 Interactive Teaser - "Some Like it Hot"</a>
+
+        </div>
+        <div class="theme_box" id="basic_UX">
+            <h2 class="title_project" id="UX_title">BASIC UX</h2>
+            <p class="text" id="text_UX">An introduction to building your own digital agency and develop your entrepreneurial mindset. Getting new insights about startup business models and learning how to communicate through digital media channels with your users/customers. Creating a visual identity for the agency and produce a prototype of a website for your digital agency.</p>
+            <img id="kin_img" src="images/logo-kin.svg" alt="KIN">
+            <a class="link_project" href="kin_page.html" id="kin_page_link">4. Build your own digital business</a>
+        </div>
+        <div class="theme_box" id="basic_video">
+            <h2 class="title_project" id="video_title">BASIC VIDEO</h2>
+            <p class="text" id="text_video">Introduction to concept development using video, dramaturgy, journalistic reportage, film language and media elements and recording and editing techniques.<br>Two minor videos were produced focusing on composition and communication.</p>
+            <div><img id="bikelife_img" src="images/bike_life.JPG" alt="storyVideo">
+            </div>
+            <div><img id="wander_img" src="images/wander_together.JPG" alt="wanderTogether"></div>
+            <a class="link_project" href="firstvideo.html" id="firstVideo_link">3.1 A story told with moving images</a>
+            <a class="link_project" href="wander_together.html" id="wander_page_link">3.2 City Walk and Meet up</a>
+        </div>
+        <div class="exit_box">X</div>
+    </main>
+</body>
+<script>
+
+    let box_web = document.querySelector('#basic_web');
+    let box_anim = document.querySelector('#basic_animation');
+    let box_UX = document.querySelector('#basic_UX');
+    let box_video = document.querySelector('#basic_video');
+    let exit_box = document.querySelector('.exit_box');
+    let img_firstWeb = document.querySelector('#firstWeb');
+    let img_pizzaWeb = document.querySelector('#pizza');
+    let hero_anim_img = document.querySelector("#hero_anim_img");
+    let woodboy_img = document.querySelector("#woodboy");
+    let someHot_img = document.querySelector("#someHot");
+    let kin_img = document.querySelector("#kin_img");
+    let bikelife = document.querySelector("#bikelife_img");
+    let wander_img = document.querySelector("#wander_img");
+    let web_title = document.querySelector('#web_title');
+    let anim_title = document.querySelector('#anim_title');
+    let UX_title = document.querySelector('#UX_title');
+    let video_title = document.querySelector('#video_title');
+    let text_web = document.querySelector('#text_web');
+    let text_anim = document.querySelector('#text_anim');
+    let text_UX = document.querySelector('#text_UX');
+    let text_video = document.querySelector('#text_video');
+    let firstWeb_link = document.querySelector("#link_firstweb");
+    let pizzapage_link = document.querySelector("#link_pizzapage");
+    let hero_link = document.querySelector("#hero_page_link");
+    let chr_sty_link = document.querySelector("#charc_story_page_link");
+    let inter_anim_link = document.querySelector("#inter_anim_page_link");
+    let someHot_link = document.querySelector("#someHot_page_link");
+    let kin_link = document.querySelector("#kin_page_link");
+    let firstVideo_link = document.querySelector("#firstVideo_link")
+    let wander_link = document.querySelector("#wander_page_link")
+
+
+    var count = false;
+    var count2 = 0;
+   if(window.innerWidth < 550) {
+
+   }
+   if(window.innerWidth >550){ box_web.addEventListener('click', chooseBoxWeb);
+    box_anim.addEventListener('click', chooseBoxAnim);
+
+    box_UX.addEventListener('click', chooseBoxUX);
+    box_video.addEventListener('click', chooseBoxVideo);
+
+    exit_box.addEventListener('click', bigSmall);
+
+    function chooseBoxWeb() {
+        count2 = 1;
+        smallBig();
+    }
+
+    function chooseBoxAnim() {
+        count2 = 2;
+        smallBig();
+    }
+
+    function chooseBoxUX() {
+        count2 = 3;
+        smallBig();
+    }
+
+    function chooseBoxVideo() {
+        count2 = 4;
+        smallBig();
+    }
+
+    function smallBig() {
+
+        console.log(count2);
+        if (count == false) {
+
+            switch (count2) {
+                case 1:
+                    bigBoxing1();
+                    break;
+                case 2:
+                    bigBoxing2();
+                    break;
+                case 3:
+                    bigBoxing3();
+                    break;
+                case 4:
+                    bigBoxing4();
+                    break;
+            }
+
+            count = true;
+        }
+
+    }
+
+    function bigSmall() {
+        if (count) {
+            switch (count2) {
+                case 1:
+                    smallBoxing1();
+                    break;
+                case 2:
+                    smallBoxing2();
+                    break;
+                case 3:
+                    smallBoxing3()
+                    break;
+                case 4:
+                    smallBoxing4();
+                    break;
+
+            }
+            count = false;
+        }
+
+    }
+
+    function bigBoxing1() {
+
+        box_web.classList.remove('theme_box');
+        box_web.classList.add('theme_box_expanded');
+        box_anim.classList.add('disapear');
+        box_UX.classList.add('disapear');
+        box_video.classList.add('disapear');
+        anim_title.style.display = "none";
+        UX_title.style.display = "none";
+        video_title.style.display = "none";
+        text_web.style.display = "block";
+        img_firstWeb.style.display = "block";
+        img_pizzaWeb.style.display = "block";
+        firstWeb_link.style.display="block";
+        pizzapage_link.style.display="block";
+
+        exit_box.style.display = "block";
+
+    }
+
+    function bigBoxing2() {
+        console.log("merda");
+        box_anim.classList.remove('theme_box');
+        box_anim.classList.add('theme_box_expanded');
+        box_web.classList.add('disapear');
+        box_UX.classList.add('disapear');
+        box_video.classList.add('disapear');
+        hero_anim_img.style.display = "block";
+        woodboy_img.style.display = "block";
+        someHot_img.style.display = "block";
+        web_title.style.display = "none";
+        UX_title.style.display = "none";
+        video_title.style.display = "none";
+        text_anim.style.display = "block";
+        hero_link.style.display="block";
+        chr_sty_link.style.display="block";
+        inter_anim_link.style.display="block";
+        someHot_link.style.display="block";
+        exit_box.style.display = "inline";
+
+    }
+
+    function bigBoxing3() {
+        console.log("merda");
+        box_UX.classList.remove('theme_box');
+        box_UX.classList.add('theme_box_expanded');
+        box_anim.classList.add('disapear');
+        box_web.classList.add('disapear');
+        box_video.classList.add('disapear');
+        anim_title.style.display = "none";
+        web_title.style.display = "none";
+        video_title.style.display = "none";
+        kin_img.style.display = "block";
+        text_UX.style.display = "block";
+        kin_link.style.display="block";
+        exit_box.style.display = "inline";
+
+    }
+
+    function bigBoxing4() {
+        console.log("merda");
+        box_video.classList.remove('theme_box');
+        box_video.classList.add('theme_box_expanded');
+        box_anim.classList.add('disapear');
+        box_UX.classList.add('disapear');
+        box_web.classList.add('disapear');
+        anim_title.style.display = "none";
+        UX_title.style.display = "none";
+        web_title.style.display = "none";
+
+        bikelife.style.display = "block";
+        wander_img.style.display = "block";
+        text_video.style.display = "block";
+        firstVideo_link.style.display="block";
+        wander_link.style.display="block";
+        exit_box.style.display = "inline";
+
+    }
+
+    function smallBoxing1() {
+        box_web.classList.remove('theme_box_expanded');
+        box_anim.classList.remove('disapear');
+        box_UX.classList.remove('disapear');
+        box_video.classList.remove('disapear');
+        box_web.classList.add('theme_box');
+        anim_title.style.display = ("block");
+        UX_title.style.display = ("block");
+        video_title.style.display = ("block");
+        text_web.style.display = "none";
+        img_firstWeb.style.display = "none";
+        img_pizzaWeb.style.display = "none";
+        firstWeb_link.style.display="none";
+        pizzapage_link.style.display="none";
+        exit_box.style.display = "none";
+
+    }
+
+    function smallBoxing2() {
+        box_anim.classList.remove('theme_box_expanded');
+        box_web.classList.remove('disapear');
+        box_UX.classList.remove('disapear');
+        box_video.classList.remove('disapear');
+        box_anim.classList.add('theme_box');
+        web_title.style.display = ("block");
+        UX_title.style.display = ("block");
+        video_title.style.display = ("block");
+        hero_anim_img.style.display = "none";
+        woodboy_img.style.display = "none";
+        someHot_img.style.display = "none";
+        text_anim.style.display = "none";
+        hero_link.style.display="none";
+        chr_sty_link.style.display="none";
+        inter_anim_link.style.display="none";
+        someHot_link.style.display="none";
+        exit_box.style.display = "none";
+    }
+
+    function smallBoxing3() {
+        box_UX.classList.remove('theme_box_expanded');
+        box_anim.classList.remove('disapear');
+        box_web.classList.remove('disapear');
+        box_video.classList.remove('disapear');
+        box_UX.classList.add('theme_box');
+        anim_title.style.display = ("block");
+        web_title.style.display = ("block");
+        video_title.style.display = ("block");
+        kin_img.style.display = "none";
+        text_UX.style.display = "none";
+        kin_link.style.display="none";
+        exit_box.style.display = "none";
+    }
+
+    function smallBoxing4() {
+        box_video.classList.remove('theme_box_expanded');
+        box_anim.classList.remove('disapear');
+        box_UX.classList.remove('disapear');
+        box_web.classList.remove('disapear');
+        box_video.classList.add('theme_box');
+        anim_title.style.display = ("block");
+        UX_title.style.display = ("block");
+        web_title.style.display = ("block");
+
+        bikelife.style.display = "none";
+        wander_img.style.display = "none";
+        text_video.style.display = "none";
+        firstVideo_link.style.display="none";
+        wander_link.style.display="none";
+        exit_box.style.display = ("none");
+    }
+}
+</script>
+
+</html>
